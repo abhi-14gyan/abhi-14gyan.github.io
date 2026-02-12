@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhigyan Srivastava | AI/ML Developer & Competitive Programmer</title>
+    <meta name="description"
+        content="Portfolio of Abhigyan Srivastava — AI/ML student at BIT Mesra, full-stack developer, and competitive programmer. Explore projects, achievements, and skills.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;AS /&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#leadership" class="nav-link">Leadership</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <p class="hero-greeting animate-fade-up">Hello, I'm</p>
+            <h1 class="hero-name animate-fade-up delay-1">Abhigyan Srivastava</h1>
+            <div class="hero-tagline animate-fade-up delay-2">
+                <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-location animate-fade-up delay-3">
+                <i class="fas fa-map-marker-alt"></i> Ranchi, Jharkhand
+            </p>
+            <div class="hero-socials animate-fade-up delay-4">
+                <a href="https://github.com/abhi-14gyan" target="_blank" rel="noopener noreferrer" class="social-link"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/abhigyan-srivastava-19609827b" target="_blank"
+                    rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://codeforces.com/profile/Xeroficator" target="_blank" rel="noopener noreferrer"
+                    class="social-link" aria-label="Codeforces">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="https://leetcode.com/u/abhi_14gyan/" target="_blank" rel="noopener noreferrer"
+                    class="social-link" aria-label="LeetCode">
+                    <i class="fas fa-laptop-code"></i>
+                </a>
+            </div>
+            <div class="hero-cta animate-fade-up delay-5">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>
+                        I'm a <strong>B.Tech student in Artificial Intelligence & Machine Learning</strong> at
+                        <strong>Birla Institute of Technology, Mesra</strong>, passionate about building impactful
+                        software solutions and solving complex algorithmic challenges.
+                    </p>
+                    <p>
+                        With expertise spanning <strong>full-stack web development</strong>, <strong>machine
+                            learning</strong>,
+                        and <strong>competitive programming</strong>, I love transforming ideas into elegant,
+                        production-ready applications. I've solved <strong>1000+ problems on Codeforces</strong>
+                        and ranked among the <strong>Top 75 in HackOn with Amazon</strong>.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="1000">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">CF Problems</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="1558">0</span>
+                            <span class="stat-label">Max Rating</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="8" data-decimal="79">0</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="75">0</span>
+                            <span class="stat-label">Top Amazon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title reveal">My <span class="gradient-text">Education</span></h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Birla Institute of Technology, Mesra</h3>
+                                <p class="timeline-degree">B.Tech — Artificial Intelligence & Machine Learning</p>
+                            </div>
+                            <span class="timeline-date">2023 — 2027</span>
+                        </div>
+                        <div class="timeline-details">
+                            <span class="badge badge-accent"><i class="fas fa-star"></i> CGPA: 8.79</span>
+                            <span class="badge"><i class="fas fa-map-marker-alt"></i> Ranchi, Jharkhand</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>DAV Public School, Hehal</h3>
+                                <p class="timeline-degree">Higher Secondary Education</p>
+                            </div>
+                            <span class="timeline-date">2019 — 2023</span>
+                        </div>
+                        <div class="timeline-details">
+                            <span class="badge badge-accent"><i class="fas fa-trophy"></i> 10th: 98%</span>
+                            <span class="badge badge-accent"><i class="fas fa-trophy"></i> 12th: 94%</span>
+                            <span class="badge"><i class="fas fa-map-marker-alt"></i> Ranchi, Jharkhand</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Technical <span class="gradient-text">Skills</span></h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <!-- Web Skills -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <!-- Machine Learning -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">EDA</span>
+                        <span class="skill-tag">Supervised Learning</span>
+                        <span class="skill-tag">Unsupervised Learning</span>
+                        <span class="skill-tag">ANN</span>
+                        <span class="skill-tag">CNN</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+                <!-- Mathematics -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-icon"><i class="fas fa-square-root-alt"></i></div>
+                    <h3>Mathematics for DS</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Algebra</span>
+                        <span class="skill-tag">Probability</span>
+                        <span class="skill-tag">Statistics</span>
+                        <span class="skill-tag">Calculus</span>
+                        <span class="skill-tag">Matrices</span>
+                    </div>
+                </div>
+                <!-- CS Fundamentals -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>CS Fundamentals</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures & Algorithms</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">DBMS</span>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category glass-card reveal">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Render</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Cloudinary</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">PyCharm</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Finlock -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-wallet"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhi-14gyan/Finlock" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://finlock-green.vercel.app" target="_blank" rel="noopener noreferrer"
+                                aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Finlock</h3>
+                    <p class="project-description">
+                        A full-stack finance management app with <strong>6+ integrated tools</strong> for budgeting,
+                        expense tracking, account analytics, and <strong>automated AI insights</strong>.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fas fa-shield-alt"></i> Google OAuth 2.0 + JWT token rotation with Arcjet rate
+                            limiting</li>
+                        <li><i class="fas fa-robot"></i> AI receipt scanning via Google Gemini with multimodal image
+                            processing</li>
+                        <li><i class="fas fa-bell"></i> Serverless CRON jobs via Inngest for budget alerts & monthly
+                            reports</li>
+                        <li><i class="fas fa-envelope"></i> Automated financial reporting via Resend email integration
+                        </li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                        <span>Inngest</span>
+                        <span>Gemini AI</span>
+                        <span>Vercel</span>
+                    </div>
+                </div>
+
+                <!-- ReWear -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-tshirt"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhi-14gyan/ReWear" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://re-wear-olive.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">ReWear</h3>
+                    <p class="project-description">
+                        A full-stack clothing exchange platform enabling <strong>1000+ users</strong> to swap clothes
+                        via <strong>direct swaps and point-based redemptions</strong>.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fas fa-user-shield"></i> JWT authentication with Axios interceptors & multi-tier
+                            RBAC</li>
+                        <li><i class="fas fa-chart-bar"></i> Admin dashboard with content moderation & platform
+                            analytics</li>
+                        <li><i class="fas fa-cloud"></i> Cloudinary CDN integration for scalable image handling</li>
+                        <li><i class="fas fa-server"></i> 20+ RESTful API endpoints with modular route architecture</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                        <span>Cloudinary</span>
+                        <span>Render</span>
+                    </div>
+                </div>
+
+                <!-- Peacify -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhi-14gyan/IEEE_megaProject" target="_blank"
+                                rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Peacify</h3>
+                    <p class="project-description">
+                        A mental health app with <strong>AI chatbots</strong>, Flask APIs, and self-care tools,
+                        tested by <strong>10+ users</strong> for real-time mental health support.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fas fa-brain"></i> Two ML models + NLP chatbot with 85%+ accuracy for mental
+                            health support</li>
+                        <li><i class="fas fa-cogs"></i> Designed data pipeline for user input preprocessing,
+                            tokenization & feature engineering</li>
+                        <li><i class="fas fa-server"></i> Secure and scalable Flask APIs for frontend-backend
+                            communication</li>
+                        <li><i class="fas fa-cloud-upload-alt"></i> Deployed on Render for production-ready availability
+                        </li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>PyTorch</span>
+                        <span>Flask</span>
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>NLP</span>
+                        <span>Render</span>
+                    </div>
+                </div>
+
+                <!-- Text Summarization -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhi-14gyan/Text-Summarization-with-HuggingFace-Transformers"
+                                target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Text Summarization</h3>
+                    <p class="project-description">
+                        A complete <strong>NLP pipeline</strong> using <strong>T5ForConditionalGeneration</strong> from
+                        Hugging Face
+                        for text summarization, covering both pre-trained inference and custom fine-tuning.
+                    </p>
+                    <ul class="project-features">
+                        <li><i class="fas fa-chart-line"></i> Fine-tuned T5 model on domain-specific data achieving
+                            evaluation loss of 1.66</li>
+                        <li><i class="fas fa-balance-scale"></i> Analyzed zero-shot vs. fine-tuned models for coherence
+                            & relevance gains</li>
+                        <li><i class="fas fa-layer-group"></i> Deep work with tokenization, attention architectures &
+                            training loops</li>
+                        <li><i class="fas fa-flask"></i> Trained in Google Colab — 2 epochs, 53.2s runtime</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>Hugging Face</span>
+                        <span>Transformers</span>
+                        <span>NLP</span>
+                        <span>Google Colab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title reveal">My <span class="gradient-text">Achievements</span></h2>
+            <div class="achievements-list">
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon trophy"><i class="fas fa-award"></i></div>
+                    <div class="achievement-content">
+                        <h4>Top 75 — HackOn with Amazon Season 5</h4>
+                        <p>Ranked among the <strong>Top 75 coders</strong> out of <strong>50,000+ participants</strong>,
+                            recognized for strong algorithmic skills and technical excellence.</p>
+                    </div>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR3F0i_YKEO7MhEWMk_RDHYCRcAXZ1c7Y1ykt4kVhjRVjG5bR1I4TcjYd3U96B5sVC5DIOCQiuXqTmW/pubhtml#gid=1357891030"
+                        target="_blank" rel="noopener noreferrer" class="achievement-link"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon fire"><i class="fas fa-fire"></i></div>
+                    <div class="achievement-content">
+                        <h4>1000+ Problems on Codeforces</h4>
+                        <p>Solved <strong>1000+ problems</strong> with a maximum rating of <strong>1558
+                                (Specialist)</strong>.</p>
+                    </div>
+                    <a href="https://codeforces.com/profile/Xeroficator" target="_blank" rel="noopener noreferrer"
+                        class="achievement-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon rank"><i class="fas fa-ranking-star"></i></div>
+                    <div class="achievement-content">
+                        <h4>Global Rank 676 — Codeforces Round 1029 (Div. 3)</h4>
+                        <p>Among <strong>33,000+ participants</strong>.</p>
+                    </div>
+                    <a href="https://codeforces.com/contest/2117/standings/participant/212001139#p212001139"
+                        target="_blank" rel="noopener noreferrer" class="achievement-link"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon rank"><i class="fas fa-ranking-star"></i></div>
+                    <div class="achievement-content">
+                        <h4>Global Rank 804 — Codeforces Round 1027 (Div. 3)</h4>
+                        <p>Among <strong>35,000+ participants</strong>.</p>
+                    </div>
+                    <a href="https://codeforces.com/contest/2114/standings/participant/211042773#p211042773"
+                        target="_blank" rel="noopener noreferrer" class="achievement-link"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon rank"><i class="fas fa-ranking-star"></i></div>
+                    <div class="achievement-content">
+                        <h4>Global Rank 879 — Codeforces Round 978 (Div. 2)</h4>
+                        <p>Among <strong>20,000+ participants</strong>.</p>
+                    </div>
+                    <a href="https://codeforces.com/contest/2022/standings/participant/193778457#p193778457"
+                        target="_blank" rel="noopener noreferrer" class="achievement-link"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon trophy"><i class="fas fa-medal"></i></div>
+                    <div class="achievement-content">
+                        <h4>Finalist — IEEE MegaProject</h4>
+                        <p>Secured a <strong>top 7 position</strong> among <strong>45+ teams</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card glass-card reveal">
+                    <div class="achievement-icon trophy"><i class="fas fa-trophy"></i></div>
+                    <div class="achievement-content">
+                        <h4>7th Rank — CodeZilla, Pantheon Techfest</h4>
+                        <p>Organized by <strong>ACM BIT-Mesra</strong>, competing against <strong>50+ teams</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LEADERSHIP ========== -->
+    <section class="section leadership" id="leadership">
+        <div class="container">
+            <h2 class="section-title reveal">Positions of <span class="gradient-text">Responsibility</span></h2>
+            <div class="leadership-card glass-card reveal">
+                <div class="leadership-header">
+                    <div class="leadership-icon"><i class="fas fa-users-cog"></i></div>
+                    <div>
+                        <h3>Technical Content Head</h3>
+                        <p class="leadership-org">IEEE, BIT Mesra</p>
+                    </div>
+                    <span class="leadership-date">February 2024 — Present</span>
+                </div>
+                <ul class="leadership-list">
+                    <li>Organised a C++ workshop for <strong>400+ students</strong>, focusing on core programming and
+                        Data Structure skills.</li>
+                    <li>Conducted the recruitment process for IEEE BIT Mesra, overseeing the participation of
+                        <strong>400+ students</strong>.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="contact-subtitle reveal">Have a project in mind or just want to say hello? Feel free to reach out!
+            </p>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-item glass-card">
+                        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:abhi.14gyan@gmail.com">abhi.14gyan@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item glass-card">
+                        <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+918235698217">+91-8235698217</a>
+                        </div>
+                    </div>
+                    <div class="contact-item glass-card">
+                        <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Ranchi, Jharkhand, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/abhi-14gyan" target="_blank" rel="noopener noreferrer"
+                            class="social-circle" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/abhigyan-srivastava-19609827b" target="_blank"
+                            rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://codeforces.com/profile/Xeroficator" target="_blank" rel="noopener noreferrer"
+                            class="social-circle" aria-label="Codeforces"><i class="fas fa-code"></i></a>
+                        <a href="https://leetcode.com/u/abhi_14gyan/" target="_blank" rel="noopener noreferrer"
+                            class="social-circle" aria-label="LeetCode"><i class="fas fa-laptop-code"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card reveal" id="contactForm" onsubmit="return false;">
+                    <div class="form-group">
+                        <input type="text" id="formName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="formEmail" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="formSubject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMessage" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">&lt;AS /&gt;</a>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/abhi-14gyan" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/abhigyan-srivastava-19609827b" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://codeforces.com/profile/Xeroficator" target="_blank" rel="noopener noreferrer"
+                        aria-label="Codeforces"><i class="fas fa-code"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abhigyan Srivastava. Built with <i class="fas fa-heart" style="color: #f43f5e;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
