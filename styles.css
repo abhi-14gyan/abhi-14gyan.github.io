@@ -545,6 +545,11 @@ img {
     object-fit: cover;
     position: relative;
     z-index: 1;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-photo:hover {
+    transform: scale(1.08);
 }
 
 .image-border {
