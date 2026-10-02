@@ -793,6 +793,10 @@ img {
 /* ========================= */
 /*         PROJECTS           */
 /* ========================= */
+.projects {
+    background: var(--bg-secondary);
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -923,10 +927,6 @@ img {
 /* ========================= */
 /*       ACHIEVEMENTS         */
 /* ========================= */
-.achievements {
-    background: var(--bg-secondary);
-}
-
 .achievements-list {
     max-width: 900px;
     margin: 0 auto;
@@ -1013,6 +1013,10 @@ img {
 /* ========================= */
 /*        LEADERSHIP          */
 /* ========================= */
+.leadership {
+    background: var(--bg-secondary);
+}
+
 .leadership-card {
     max-width: 800px;
     margin: 0 auto;
@@ -1061,18 +1065,21 @@ img {
     white-space: nowrap;
 }
 
-.leadership-list {
+.leadership-list,
+.experience-list {
     list-style: none;
 }
 
-.leadership-list li {
+.leadership-list li,
+.experience-list li {
     position: relative;
     padding: 8px 0 8px 24px;
     color: var(--text-secondary);
     font-size: 0.95rem;
 }
 
-.leadership-list li::before {
+.leadership-list li::before,
+.experience-list li::before {
     content: '';
     position: absolute;
     left: 0;
@@ -1083,17 +1090,41 @@ img {
     background: var(--gradient-accent);
 }
 
-.leadership-list li strong {
+.leadership-list li strong,
+.experience-list li strong {
     color: var(--text-primary);
+}
+
+/* ========================= */
+/*        EXPERIENCE          */
+/* ========================= */
+.experience-group {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.experience-group-title {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-cyan);
+    margin-bottom: 4px;
+}
+
+.experience .timeline-details {
+    margin-bottom: 8px;
+}
+
+.experience .project-tech {
+    margin-top: 24px;
 }
 
 /* ========================= */
 /*         CONTACT            */
 /* ========================= */
-.contact {
-    background: var(--bg-secondary);
-}
-
 .contact-subtitle {
     text-align: center;
     color: var(--text-secondary);
