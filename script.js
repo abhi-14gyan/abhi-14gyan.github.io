@@ -111,11 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========== TYPING ANIMATION ==========
     const typingEl = document.getElementById('typingText');
     const phrases = [
+        'AI & Backend Engineer',
+        'GenAI Developer',
         'AI & Machine Learning Student',
-        'Full-Stack Web Developer',
         'Competitive Programmer',
-        'Codeforces Specialist (1558)',
-        'Top 75 — HackOn with Amazon'
+        'Codeforces Specialist (1558)'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
